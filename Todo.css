@@ -1,0 +1,63 @@
+body {
+   background-color: rgb(21, 190, 190);
+   font-family: 'Poppins', sans-serif;
+   margin: 0; /* Remove default margin to prevent horizontal scrollbar */
+}
+
+.container {
+   width: 80%; /* Adjusted width for larger screens */
+   max-width: 400px; /* Maximum width for smaller screens */
+   margin: 5% auto; /* Center the container */
+   padding: 15px;
+   text-align: center;
+   background-color: #882b2b;
+}
+
+input {
+   width: 100%; /* Make input take full width of the container */
+   box-sizing: border-box; /* Include padding and border in the width */
+   padding: 8px;
+   border: 2px solid rgb(72, 143, 143);
+   outline: none;
+   font-size: 19px;
+}
+
+button {
+   width: 100%; /* Make button take full width of the container */
+   height: 41px;
+   background-color: rgb(41, 35, 204);
+   color: rgb(229, 229, 229);
+   border: none;
+   cursor: pointer;
+   outline: none;
+   border-radius: 2px;
+   font-size: 19px;
+   margin-top: 10px; /* Add some space between input and button */
+}
+
+.text ul {
+   background-color: rgb(41, 35, 204);
+   color: white;
+   font-size: 19px;
+   padding: 7px;
+   text-align: left;
+   margin-top: 10px; /* Add some space between button and task list */
+}
+
+.text ul i {
+   cursor: pointer;
+   float: right; /* Align the delete icon to the right */
+   margin-right: 10px; /* Add some space to the right of the delete icon */
+}
+
+h1 {
+   color: white;
+   font-style: italic;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+   .container {
+       width: 90%;
+   }
+}
